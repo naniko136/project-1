@@ -1,0 +1,120 @@
+@use "base" as *;
+@use "variables" as *;
+
+.contact-section {
+  background-color: $whitecolor;
+  width: 100%;
+  padding: 50px 10%;
+
+  .centerdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    // padding: 50px 10%;
+    width: 100%;
+
+    h2 {
+      max-width: 365px;
+      width: 100%;
+      color: $text-color;
+      font-size: 55px;
+      font-family: "Sora", sans-serif;
+    }
+    @media (max-width: 500px) {
+      h2 {
+        font-size: 46px;
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    .centerdiv {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      gap: 50px;
+    }
+  }
+  .centerdivp {
+    max-width: 289px;
+    width: 100%;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Futura LT Alt", sans-serif;
+  }
+  @media (max-width: 850px) {
+    .centerdivp {
+      max-width: 500px;
+      width: 100%;
+      line-height: 25px;
+    }
+  }
+  @media (max-width: 500px) {
+    .centerdivp {
+      display: none;
+    }
+  }
+  .contactdiv {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 50px;
+    // padding: 50px 10%;
+    width: 100%;
+
+    label {
+      width: 100%;
+      color: $text-color;
+      font-size: 14px;
+      font-family: "Futura LT Alt", sans-serif;
+    }
+    input,
+    select {
+      max-width: 500px;
+      width: 100%;
+      background-color: $whitecolor;
+      padding: 10px;
+      border-radius: 30px;
+    }
+    textarea {
+      max-width: 500px;
+      width: 100%;
+      background-color: $whitecolor;
+      padding: 20px 5px;
+      border-radius: 15px;
+    }
+  }
+  button {
+    max-width: 500px;
+    width: 100%;
+    background-color: $text-color;
+    color: $whitecolor;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Futura LT Alt", sans-serif;
+
+    padding: 10px;
+
+    &:hover {
+      background-color: $whitecolor;
+      color: $text-color;
+    }
+  }
+  .img-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  div img {
+    width: 100%;
+    border-radius: 55px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,153 @@
+@use "base" as *;
+@use "variables" as *;
+
+.programs-page-section {
+  background-color: $whitecolor;
+  width: 100%;
+
+  .educationaldiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+
+    h2 {
+      width: 100%;
+      color: $text-color;
+      font-size: 50px;
+      font-family: "Sora", sans-serif;
+    }
+    a button {
+      width: 100%;
+      background-color: $pink-color;
+      font-size: $logofont-size;
+      color: $whitecolor;
+      text-align: center;
+      border: none;
+      border-radius: 60px;
+      cursor: pointer;
+      padding: 10px 30px;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+    @media (max-width: 1000px) {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  .right-left-programs-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+    width: 100%;
+    padding-left: 27%;
+    margin-bottom: 6%;
+
+    .right-programs-div {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 100px;
+      width: 50%;
+
+      .right-programs-div-top,
+      .right-programs-div-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        h2 {
+          width: 100%;
+          color: $text-color;
+          font-size: 30px;
+          font-family: "Sora", sans-serif;
+        }
+
+        p {
+          max-width: 375px;
+          width: 100%;
+          color: $text-color;
+          font-size: 18px;
+          font-family: "Futura LT Alt", sans-serif;
+        }
+        @media (max-width: 850px) {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .left-programs-div {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 100px;
+      width: 50%;
+
+      .left-programs-div-top,
+      .left-programs-div-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        h2 {
+          width: 100%;
+          color: $text-color;
+          font-size: 30px;
+          font-family: "Sora", sans-serif;
+        }
+        p {
+          max-width: 375px;
+          width: 100%;
+          color: $text-color;
+          font-size: 18px;
+          font-family: "Futura LT Alt", sans-serif;
+        }
+        @media (max-width: 850px) {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    @media (max-width: 850px) {
+      .left-programs-div {
+        gap: 50px;
+        width: 100%;
+      }
+      .right-programs-div {
+        gap: 50px;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    .right-left-programs-div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-left: 5%;
+      gap: 50px;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

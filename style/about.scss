@@ -1,0 +1,117 @@
+@use "base" as *;
+@use "variables" as *;
+
+.about-page-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // gap: 50px;
+  padding: 50px;
+  background-color: $whitecolor;
+
+  .about-rightside {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+
+    h2 {
+      max-width: 980px;
+      width: 100%;
+      color: $text-color;
+      font-size: 50px;
+      font-family: "Sora", sans-serif;
+    }
+    img {
+      width: 80%;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+    @media (max-width: 1000px) {
+      h2 {
+        width: 100%;
+        font-size: 26px;
+      }
+    }
+    @media (max-width: 768px) {
+      h2 {
+        width: 100%;
+        color: $text-color;
+        font-size: 33px;
+        font-family: "Sora", sans-serif;
+      }
+      img {
+        width: 100%;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+    }
+    @media (max-width: 500px) {
+      h2 {
+        width: 100%;
+        color: $text-color;
+        font-size: 30px;
+        font-family: "Sora", sans-serif;
+      }
+    }
+  }
+  .about-leftside {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+    p {
+      max-width: 340px;
+      width: 100%;
+      color: $text-color;
+      line-height: 20px;
+      font-size: 16px;
+      font-family: "Futura LT Alt", sans-serif;
+    }
+    a button {
+      max-width: 146px;
+      width: 100%;
+      background-color: $pink-color;
+      font-size: $logofont-size;
+      color: $whitecolor;
+      text-align: center;
+      border: none;
+      border-radius: 60px;
+      cursor: pointer;
+      padding: 10px 30px;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+    @media (max-width: 1000px) {
+      p {
+        width: 100%;
+        // line-height: 15px;
+        font-size: 14px;
+      }
+      a button {
+        width: 100%;
+        padding: 10px 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      p {
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about-page-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

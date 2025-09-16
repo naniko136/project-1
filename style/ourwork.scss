@@ -1,0 +1,85 @@
+@use "base" as *;
+@use "variables" as *;
+
+.out-work-section1 {
+  background-color: $whitecolor;
+  width: 100%;
+  padding-top: 100px;
+
+  h1 {
+    width: 100%;
+    color: $text-color;
+    text-align: start;
+    font-size: 50px;
+    font-family: "Sora", sans-serif;
+    padding-left: 6%;
+  }
+  @media (max-width: 1000px) {
+    h1 {
+      text-align: center;
+    }
+  }
+  @media (max-width: 500px) {
+    h1 {
+      text-align: center;
+      font-size: 45px;
+    }
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+
+    .card {
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+      padding: 30px;
+
+      img {
+        width: 70%;
+        border-radius: 60px;
+        object-fit: cover;
+      }
+      .card-text {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+          color: $text-color;
+          font-size: 30px;
+          font-family: "Sora", sans-serif;
+        }
+        p {
+          width: 100%;
+          text-align: center;
+          color: $text-color;
+          font-size: 18px;
+          font-family: "Futura LT Alt", sans-serif;
+        }
+      }
+    }
+  }
+  @media (max-width: 860px) {
+    .card-container {
+      flex-direction: column;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

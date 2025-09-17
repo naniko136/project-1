@@ -774,6 +774,25 @@ a {
   padding: 10px;
   border-radius: 30px;
 }
+.testimonail-section .contactdiv select {
+  max-width: 1px;
+  border: none;
+  padding: 8px;
+}
+.testimonail-section .contactdiv .index-svg-div {
+  display: flex;
+  border: 1px solid black;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 30px;
+}
+.testimonail-section .contactdiv .index-svg-div svg {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.testimonail-section .contactdiv .index-svg-div .index-inpt {
+  border: none;
+}
 .testimonail-section .contactdiv textarea {
   max-width: 500px;
   width: 100%;

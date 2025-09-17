@@ -565,6 +565,26 @@
       padding: 10px;
       border-radius: 30px;
     }
+    select {
+      max-width: 1px;
+      border: none;
+      padding: 8px;
+    }
+    .index-svg-div {
+      display: flex;
+      border: 1px solid black;
+      max-width: 500px;
+      width: 100%;
+      border-radius: 30px;
+
+      svg {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .index-inpt {
+        border: none;
+      }
+    }
     textarea {
       max-width: 500px;
       width: 100%;
